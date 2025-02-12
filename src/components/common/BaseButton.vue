@@ -12,10 +12,11 @@
     ]"
     :disabled="disabled"
   >
+  <!-- Los slot heredan la lógica a los componentes  renderizar lo que tiene adentro -->
     <slot />
   </button>
 </template>
-
+<!--!Los props son propiedades que le ponemos a los componentes -->
 <script setup lang="ts">
 interface Props {
   variant?: 'primary' | 'secondary' | 'danger'
